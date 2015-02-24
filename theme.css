@@ -1,0 +1,45 @@
+nav ul 
+{
+	background: #2394CD;
+	position: relative;
+	float: center;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul a
+{
+	display: inline-table;
+	color: #333;
+	text-decoration: none;
+	line-height: 32px;
+	padding:  0% 5%;
+}
+
+nav ul li
+{
+	position: relative;
+	float: center;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+/* Definiendo el menu para que 
+/*sea dropdown */
+nav ul ul {
+	/*el display se pone a none para los hijos de las listas*/
+	  	display:none;
+	  	position: absolute;
+	  	top: 100%;
+	  	left: 0;
+}
+
+/*when you hover over a li element of the ul it will display the sublist 
+of elements of only that element that is being hovered on (that's
+	what the > is used for).*/
+nav ul li:hover>ul
+{
+	display: inline-block;
+}
+
